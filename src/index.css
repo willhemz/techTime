@@ -88,4 +88,13 @@
   .second__content__header {
     @apply flex flex-col items-start gap-6 w-[50%] h-[488px];
   }
+
+  /* Third */
+  .third {
+    @apply w-full bg-bluLight h-[158px] flex justify-center items-center;
+  }
+
+  .third__content {
+    @apply w-[64.3%] h-[54.03px] flex justify-between items-center gap-[4.05%];
+  }
 }

@@ -30,6 +30,20 @@ const greeny: string = new URL('../assets/images/greeny.png', import.meta.url)
 const yello: string = new URL('../assets/images/yello.png', import.meta.url)
   .href
 
+const zoom: string = new URL('../assets/images/zoom.png', import.meta.url).href
+
+const stripe: string = new URL('../assets/images/stripe.png', import.meta.url)
+  .href
+
+const monday: string = new URL('../assets/images/monday.png', import.meta.url)
+  .href
+
+const slack: string = new URL('../assets/images/slack.png', import.meta.url)
+  .href
+
+const dropbox: string = new URL('../assets/images/dropbox.png', import.meta.url)
+  .href
+
 export type ImageType = {
   people: string
   hero: string
@@ -37,5 +51,14 @@ export type ImageType = {
   wire: string
   greeny: string
   yello: string
+  logo: object
 }
-export const images: ImageType = { people, hero, arrow, wire, greeny, yello }
+export const images: ImageType = {
+  people,
+  hero,
+  arrow,
+  wire,
+  greeny,
+  yello,
+  logo: { zoom, stripe, monday, slack, dropbox },
+}

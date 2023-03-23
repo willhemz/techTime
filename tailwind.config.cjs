@@ -13,6 +13,7 @@ module.exports = {
         neutral: '#a1a1a1',
         bluT: '#AAC4E6',
         bluFaded: '#e7e7e7',
+        bluLight: '#CCDBF0',
       },
     },
   },
