@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { First, Second, Third } from './component'
+import { First, Fourth, Second, Third } from './component'
 
 const App = (): ReactElement => {
   const content: ReactElement = (
@@ -8,6 +8,7 @@ const App = (): ReactElement => {
       <main className='w-full'>
         <Second />
         <Third />
+        <Fourth />
       </main>
     </div>
   )

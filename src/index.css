@@ -97,4 +97,57 @@
   .third__content {
     @apply w-[64.3%] h-[54.03px] flex justify-between items-center gap-[4.05%];
   }
+
+  /* Fourth */
+  .fourth {
+    @apply w-full h-[753px] bg-greyLight flex justify-center items-center;
+  }
+
+  .fourth__content {
+    @apply w-[86.1%] flex justify-between items-center relative;
+  }
+
+  .fourth__header {
+    @apply w-[48%] h-[518px] flex flex-col items-start gap-6;
+  }
+
+  .fourth__header__top {
+    @apply flex flex-col items-start gap-8;
+  }
+
+  .fourth__header__top > div {
+    @apply flex flex-col items-start gap-4;
+  }
+
+  .fourth__header__top div > div {
+    @apply flex items-start gap-[10px] isolate;
+  }
+
+  .fourth__header__top div > div h3 {
+    @apply font-clash font-bold text-[56px] leading-[70px] capitalize text-[#000f24];
+  }
+
+  .fourth__header__top div > div img {
+    @apply absolute left-[-45px] top-[-37.26px];
+  }
+
+  .fourth__header__top div > p {
+    @apply w-[87%] font-satoshi font-semibold text-base leading-[28px] capitalize text-[#a2a2a2];
+  }
+
+  .fourth__header__bottom {
+    @apply flex flex-col items-start gap-6 w-[70.89%];
+  }
+
+  .fourth__header__bottom > div {
+    @apply flex items-start gap-6;
+  }
+
+  .fourth__header__bottom > div > button {
+    @apply flex items-center gap-4 bg-white rounded-lg py-5 pl-6 pr-14;
+  }
+
+  .fourth__header__bottom > div > button > p {
+    @apply font-satoshi font-bold text-base leading-[22px] text-[#000f24] capitalize;
+  }
 }

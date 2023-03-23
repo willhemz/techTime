@@ -14,6 +14,7 @@ module.exports = {
         bluT: '#AAC4E6',
         bluFaded: '#e7e7e7',
         bluLight: '#CCDBF0',
+        greyLight: '#F8F9FC',
       },
     },
   },

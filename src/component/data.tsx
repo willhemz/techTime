@@ -44,6 +44,30 @@ const slack: string = new URL('../assets/images/slack.png', import.meta.url)
 const dropbox: string = new URL('../assets/images/dropbox.png', import.meta.url)
   .href
 
+const audio: string = new URL('../assets/images/audio.png', import.meta.url)
+  .href
+
+const live: string = new URL('../assets/images/live.png', import.meta.url).href
+
+const video: string = new URL('../assets/images/video.png', import.meta.url)
+  .href
+
+const notes: string = new URL('../assets/images/notes.png', import.meta.url)
+  .href
+
+const crownQuote: string = new URL(
+  '../assets/images/quote.png',
+  import.meta.url
+).href
+
+const study: string = new URL('../assets/images/study.png', import.meta.url)
+  .href
+
+const bgAbout: string = new URL('../assets/images/bgAbout.png', import.meta.url)
+  .href
+
+export type ClassImage = { name: string; text: string }
+
 export type ImageType = {
   people: string
   hero: string
@@ -51,8 +75,13 @@ export type ImageType = {
   wire: string
   greeny: string
   yello: string
+  study: string
+  crownQuote: string
+  bgAbout: string
   logo: object
+  classes: ClassImage[]
 }
+
 export const images: ImageType = {
   people,
   hero,
@@ -60,5 +89,14 @@ export const images: ImageType = {
   wire,
   greeny,
   yello,
+  study,
+  bgAbout,
   logo: { zoom, stripe, monday, slack, dropbox },
+  classes: [
+    { name: audio, text: 'Audio Classes' },
+    { name: live, text: 'Live Classes' },
+    { name: video, text: 'Recorded Classes' },
+    { name: notes, text: '50+ Classes' },
+  ],
+  crownQuote,
 }
