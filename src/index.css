@@ -1,0 +1,48 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap');
+
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap');
+
+@font-face {
+  font-family: 'amazingKids';
+  src: url('./assets/fonts/amazingKids.ttf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border outline-none;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex py-4 px-8 font-satoshi font-bold text-base leading-[22px] capitalize rounded;
+  }
+
+  .btn__white {
+    @apply items-start w-[145px] h-[54px] bg-white gap-[10px] text-blu;
+  }
+
+  .btn__transparent {
+    @apply items-center gap-2 w-[216px] h-[54px] border border-white text-white;
+  }
+
+  .btn__blue {
+    @apply items-start w-[166px] h-[54px] bg-blu gap-[10px] text-white;
+  }
+
+  .btn__blue--large {
+    @apply w-[209px];
+  }
+
+  .btn__white--large {
+    @apply w-[220px];
+  }
+
+  .logo {
+    @apply font-amazing text-[47px] leading-[47px] capitalize text-white w-[130px] h-[47px];
+  }
+}
