@@ -150,4 +150,13 @@
   .fourth__header__bottom > div > button > p {
     @apply font-satoshi font-bold text-base leading-[22px] text-[#000f24] capitalize;
   }
+
+  /* Fifth */
+  .fifth {
+    @apply bg-greyLight w-full h-[892px] flex justify-center items-center relative;
+  }
+
+  .fifth__content {
+    @apply w-[86.1%] h-[747px] flex items-center gap-[9.21%];
+  }
 }

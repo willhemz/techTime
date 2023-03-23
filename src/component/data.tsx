@@ -66,7 +66,30 @@ const study: string = new URL('../assets/images/study.png', import.meta.url)
 const bgAbout: string = new URL('../assets/images/bgAbout.png', import.meta.url)
   .href
 
+const learning: string = new URL(
+  '../assets/images/learning.png',
+  import.meta.url
+).href
+
+const wifi: string = new URL('../assets/images/wifi.png', import.meta.url).href
+
+const clock: string = new URL('../assets/images/clock.png', import.meta.url)
+  .href
+
+const price: string = new URL('../assets/images/price.png', import.meta.url)
+  .href
+
+const users: string = new URL('../assets/images/users.png', import.meta.url)
+  .href
+
+const bgContext: string = new URL(
+  '../assets/images/bgContext.png',
+  import.meta.url
+).href
+
 export type ClassImage = { name: string; text: string }
+
+export type ArtType = { name: string; title: string; text: string }
 
 export type ImageType = {
   people: string
@@ -77,9 +100,12 @@ export type ImageType = {
   yello: string
   study: string
   crownQuote: string
+  learning: string
   bgAbout: string
+  bgContext: string
   logo: object
   classes: ClassImage[]
+  art: ArtType[]
 }
 
 export const images: ImageType = {
@@ -91,6 +117,8 @@ export const images: ImageType = {
   yello,
   study,
   bgAbout,
+  bgContext,
+  learning,
   logo: { zoom, stripe, monday, slack, dropbox },
   classes: [
     { name: audio, text: 'Audio Classes' },
@@ -99,4 +127,26 @@ export const images: ImageType = {
     { name: notes, text: '50+ Classes' },
   ],
   crownQuote,
+  art: [
+    {
+      name: wifi,
+      title: 'Experienced Mentor',
+      text: 'high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.',
+    },
+    {
+      name: clock,
+      title: 'one-on-one meetings',
+      text: 'high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.',
+    },
+    {
+      name: users,
+      title: 'one-on-one meetings',
+      text: 'high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.',
+    },
+    {
+      name: price,
+      title: 'affordable prices',
+      text: 'high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.',
+    },
+  ],
 }
