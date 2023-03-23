@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         blu: '#004db3',
         neutral: '#a1a1a1',
+        bluT: '#AAC4E6',
       },
     },
   },

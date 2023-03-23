@@ -15,6 +15,10 @@
   * {
     @apply m-0 p-0 box-border outline-none;
   }
+
+  body {
+    @apply max-w-[1728px] w-full overflow-x-hidden;
+  }
 }
 
 @layer components {
@@ -42,7 +46,33 @@
     @apply w-[220px];
   }
 
-  .logo {
+  /* App */
+  .app {
+    @apply w-full bg-blu h-[8000px];
+  }
+
+  /* First */
+  .header {
+    @apply w-full h-[150px] flex justify-center items-center;
+  }
+
+  .header__content {
+    @apply w-[86.1%] h-[36%] flex justify-between items-end p-0;
+  }
+
+  .header__content__logo {
     @apply font-amazing text-[47px] leading-[47px] capitalize text-white w-[130px] h-[47px];
+  }
+
+  .header__content__links {
+    @apply flex items-center gap-10 h-full;
+  }
+
+  .header__content__links--url {
+    @apply flex items-center gap-6 w-[70.5%] h-[40.7%];
+  }
+
+  .header__content__links--url a {
+    @apply font-satoshi font-bold text-base leading-[22px] text-bluT capitalize;
   }
 }
