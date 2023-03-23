@@ -1,10 +1,13 @@
 import { ReactElement } from 'react'
-import { First } from './component'
+import { First, Second } from './component'
 
 const App = (): ReactElement => {
   const content: ReactElement = (
     <div className='app'>
       <First />
+      <main className='w-full'>
+        <Second />
+      </main>
     </div>
   )
   return content

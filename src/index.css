@@ -75,4 +75,17 @@
   .header__content__links--url a {
     @apply font-satoshi font-bold text-base leading-[22px] text-bluT capitalize;
   }
+
+  /* Second */
+  .second {
+    @apply w-full h-[925px] flex justify-center items-center text-white;
+  }
+
+  .second__content {
+    @apply w-[86.1%] h-full flex justify-between items-center p-0 relative;
+  }
+
+  .second__content__header {
+    @apply flex flex-col items-start gap-6 w-[50%] h-[488px];
+  }
 }
