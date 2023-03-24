@@ -4,6 +4,7 @@ import {
   Fifth,
   First,
   Fourth,
+  Last,
   Ninth,
   Second,
   Sixth,
@@ -23,6 +24,7 @@ const App = (): ReactElement => {
         <Eight />
         <Ninth />
       </main>
+      <Last />
     </div>
   )
   return content

@@ -182,4 +182,13 @@
   .ninth {
     @apply w-full h-[1035px] bg-white flex flex-col justify-center items-center gap-[82px];
   }
+
+  /* Last */
+  .last {
+    @apply w-full h-[808px] bg-[#000f24] flex justify-center items-center;
+  }
+
+  .last__content {
+    @apply w-[86.1%] h-[295px] flex justify-between items-start gap-[5.78%];
+  }
 }
