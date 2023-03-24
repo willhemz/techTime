@@ -19,6 +19,10 @@
   body {
     @apply max-w-[1728px] w-full overflow-x-hidden;
   }
+
+  #root {
+    @apply w-full;
+  }
 }
 
 @layer components {
@@ -48,7 +52,7 @@
 
   /* App */
   .app {
-    @apply w-full bg-blu h-[8000px];
+    @apply w-full overflow-x-hidden bg-blu h-[8000px];
   }
 
   /* First */
@@ -158,5 +162,14 @@
 
   .fifth__content {
     @apply w-[86.1%] h-[747px] flex items-center gap-[9.21%];
+  }
+
+  /* Sixth */
+  .sixth {
+    @apply bg-greyLight w-full h-[1681px] flex justify-center items-center relative;
+  }
+
+  .sixth__content {
+    @apply w-[86.1%] h-[1555px] flex flex-col items-center gap-[56px];
   }
 }

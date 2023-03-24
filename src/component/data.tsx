@@ -87,9 +87,178 @@ const bgContext: string = new URL(
   import.meta.url
 ).href
 
+const userResearch: string = new URL(
+  '../assets/images/userResearch.png',
+  import.meta.url
+).href
+
+const audience: string = new URL(
+  '../assets/images/audience.png',
+  import.meta.url
+).href
+
+const bootstrap: string = new URL(
+  '../assets/images/bootstrap.png',
+  import.meta.url
+).href
+
+const learnjs: string = new URL('../assets/images/learnjs.png', import.meta.url)
+  .href
+
+const marketing: string = new URL(
+  '../assets/images/marketing.png',
+  import.meta.url
+).href
+
+const liveMarket: string = new URL(
+  '../assets/images/liveMarket.png',
+  import.meta.url
+).href
+
+const leonard: string = new URL('../assets/images/leonard.png', import.meta.url)
+  .href
+
+const jeffrey: string = new URL('../assets/images/jeffrey.png', import.meta.url)
+  .href
+
+const claretta: string = new URL(
+  '../assets/images/claretta.png',
+  import.meta.url
+).href
+
+const jessica: string = new URL('../assets/images/jessica.png', import.meta.url)
+  .href
+
+const samuel: string = new URL('../assets/images/samuel.png', import.meta.url)
+  .href
+
+const adam: string = new URL('../assets/images/adam.png', import.meta.url).href
+
+const schedule: string = new URL(
+  '../assets/images/schedule.png',
+  import.meta.url
+).href
+
+const grade: string = new URL('../assets/images/grade.png', import.meta.url)
+  .href
+
+const menu_book: string = new URL(
+  '../assets/images/menu_book.png',
+  import.meta.url
+).href
+
+const bgMod: string = new URL('../assets/images/bgMod.png', import.meta.url)
+  .href
+
 export type ClassImage = { name: string; text: string }
 
 export type ArtType = { name: string; title: string; text: string }
+
+export type CourseType = {
+  image: string
+  category: string
+  rating: string
+  members: string
+  title: string
+  duration: string
+  lessons: number
+  avatar: string
+  tutor: string
+  price: string
+}
+
+type PriceFunc = (val: number) => string
+
+const handlePrice: PriceFunc = (val: number): string => {
+  return new Intl.NumberFormat('en-us', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(val)
+}
+
+export type Programs = CourseType[]
+
+const programs: Programs = [
+  {
+    image: userResearch,
+    category: 'Design',
+    rating: '4.7k',
+    members: ' 32.7k+',
+    title: 'Introduction to user research in UX Design',
+    duration: '23hrs 50mins',
+    lessons: 15,
+    avatar: leonard,
+    tutor: 'Leonard Victor',
+    price: handlePrice(15),
+  },
+  {
+    image: audience,
+    category: 'Marketing',
+    rating: '4.7k',
+    members: ' 8.7k+',
+    title: 'Introduction to new marketing audience',
+    duration: '22hrs 50mins',
+    lessons: 22,
+    avatar: jeffrey,
+    tutor: 'Jeffrey Williams',
+    price: handlePrice(32),
+  },
+  {
+    image: bootstrap,
+    category: 'Development',
+    rating: '4.7k',
+    members: ' 12.7k+',
+    title: 'Introduction to HTL, CSS & Bootstrap',
+    duration: '45hrs 50mins',
+    lessons: 55,
+    avatar: claretta,
+    tutor: 'Claretta Mason',
+    price: handlePrice(55),
+  },
+  {
+    image: learnjs,
+    category: 'Development',
+    rating: '4.7k',
+    members: ' 32.7k+',
+    title: 'Introduction to javascript, Git & Github',
+    duration: '30hrs 50mins',
+    lessons: 22,
+    avatar: jessica,
+    tutor: 'Jessica Duke',
+    price: handlePrice(45),
+  },
+  {
+    image: marketing,
+    category: 'Marketing',
+    rating: '4.7k',
+    members: ' 4.7k+',
+    title: 'Introduction to outroom marketing analysis',
+    duration: '33hrs 50mins',
+    lessons: 26,
+    avatar: samuel,
+    tutor: 'Samuel Jacobs',
+    price: handlePrice(25),
+  },
+  {
+    image: liveMarket,
+    category: 'Marketing',
+    rating: '4.7k',
+    members: ' 15.7k+',
+    title: 'Introduction to live marketing analysis',
+    duration: '10hrs 50mins',
+    lessons: 32,
+    avatar: adam,
+    tutor: 'Adam Smith',
+    price: handlePrice(25),
+  },
+]
+
+export const categories: string[] = [
+  'All Categories',
+  'Design',
+  'Development',
+  'Marketing',
+]
 
 export type ImageType = {
   people: string
@@ -106,6 +275,12 @@ export type ImageType = {
   logo: object
   classes: ClassImage[]
   art: ArtType[]
+  programs: Programs
+  categories: string[]
+  schedule: string
+  grade: string
+  menu_book: string
+  bgMod: string
 }
 
 export const images: ImageType = {
@@ -119,6 +294,10 @@ export const images: ImageType = {
   bgAbout,
   bgContext,
   learning,
+  schedule,
+  grade,
+  menu_book,
+  bgMod,
   logo: { zoom, stripe, monday, slack, dropbox },
   classes: [
     { name: audio, text: 'Audio Classes' },
@@ -149,4 +328,6 @@ export const images: ImageType = {
       text: 'high-defination video is video of higher resolution and quality than standard definition. high-defination video is video of higher resolution and quality than standard definition.',
     },
   ],
+  programs,
+  categories,
 }
