@@ -172,4 +172,9 @@
   .sixth__content {
     @apply w-[86.1%] h-[1555px] flex flex-col items-center gap-[56px];
   }
+
+  /* Eight */
+  .eight {
+    @apply w-full h-[971px] flex flex-col justify-center items-center;
+  }
 }

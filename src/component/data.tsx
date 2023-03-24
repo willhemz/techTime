@@ -150,6 +150,11 @@ const menu_book: string = new URL(
 const bgMod: string = new URL('../assets/images/bgMod.png', import.meta.url)
   .href
 
+const techstars: string = new URL(
+  '../assets/images/techstars.png',
+  import.meta.url
+).href
+
 export type ClassImage = { name: string; text: string }
 
 export type ArtType = { name: string; title: string; text: string }
@@ -281,6 +286,7 @@ export type ImageType = {
   grade: string
   menu_book: string
   bgMod: string
+  techstars: string
 }
 
 export const images: ImageType = {
@@ -298,6 +304,7 @@ export const images: ImageType = {
   grade,
   menu_book,
   bgMod,
+  techstars,
   logo: { zoom, stripe, monday, slack, dropbox },
   classes: [
     { name: audio, text: 'Audio Classes' },
