@@ -1,5 +1,14 @@
 import { ReactElement } from 'react'
-import { Eight, Fifth, First, Fourth, Second, Sixth, Third } from './component'
+import {
+  Eight,
+  Fifth,
+  First,
+  Fourth,
+  Ninth,
+  Second,
+  Sixth,
+  Third,
+} from './component'
 
 const App = (): ReactElement => {
   const content: ReactElement = (
@@ -12,6 +21,7 @@ const App = (): ReactElement => {
         <Fifth />
         <Sixth />
         <Eight />
+        <Ninth />
       </main>
     </div>
   )

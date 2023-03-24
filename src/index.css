@@ -177,4 +177,9 @@
   .eight {
     @apply w-full h-[971px] flex flex-col justify-center items-center;
   }
+
+  /* Ninth */
+  .ninth {
+    @apply w-full h-[1035px] bg-white flex flex-col justify-center items-center gap-[82px];
+  }
 }
