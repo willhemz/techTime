@@ -130,7 +130,11 @@ const Sixth = (): ReactElement => {
   )
 
   const fifth: ReactElement = (
-    <img className='left-[9.49%] top-[12.2%] absolute' src={bgMod} alt='' />
+    <img
+      className='left-[1.87%] top-[0.77%] w-[16.45px] h-[18.31px] md:w-auto md:h-auto md:left-[9.49%] md:top-[12.2%] absolute'
+      src={bgMod}
+      alt=''
+    />
   )
 
   const content: ReactElement = (

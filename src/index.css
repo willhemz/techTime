@@ -192,17 +192,17 @@
 
   /* Eight */
   .eight {
-    @apply w-full h-[971px] flex flex-col justify-center items-center;
+    @apply w-full h-[459px] lg:h-[971px] flex flex-col justify-center items-center;
   }
 
   /* Ninth */
   .ninth {
-    @apply w-full h-[1035px] bg-white flex flex-col justify-center items-center gap-[82px] relative;
+    @apply w-full h-auto pt-10 pb-[65px] lg:pt-20 lg:pb-[105px] bg-white flex flex-col justify-center items-center gap-6 lg:gap-[82px] relative;
   }
 
   /* Last */
   .last {
-    @apply w-full h-[808px] bg-[#000f24] flex justify-center items-center;
+    @apply w-full pt-10 pb-[164px] px-4 h-[1065px] lg:h-[808px] bg-[#000f24] flex flex-col lg:flex-row justify-center items-start lg:justify-between lg:flex-wrap lg:pt-[166px] lg:pb-[347px] lg:px-[120px] lg:gap-8 lg:h-auto;
   }
 
   .last__content {
