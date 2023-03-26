@@ -155,6 +155,14 @@ const techstars: string = new URL(
   import.meta.url
 ).href
 
+const arrInvert: string = new URL(
+  '../assets/images/arrInvert.png',
+  import.meta.url
+).href
+
+const bgAbt: string = new URL('../assets/images/bgAbt.png', import.meta.url)
+  .href
+
 export type ClassImage = { name: string; text: string }
 
 export type ArtType = { name: string; title: string; text: string }
@@ -277,6 +285,8 @@ export type ImageType = {
   learning: string
   bgAbout: string
   bgContext: string
+  arrInvert: string
+  bgAbt: string
   logo: object
   classes: ClassImage[]
   art: ArtType[]
@@ -302,9 +312,11 @@ export const images: ImageType = {
   learning,
   schedule,
   grade,
+  arrInvert,
   menu_book,
   bgMod,
   techstars,
+  bgAbt,
   logo: { zoom, stripe, monday, slack, dropbox },
   classes: [
     { name: audio, text: 'Audio Classes' },

@@ -16,6 +16,17 @@ module.exports = {
         bluLight: '#CCDBF0',
         greyLight: '#F8F9FC',
       },
+      keyframes: {
+        carousel: {
+          '100%': { transform: 'translateX(-301.5px)' },
+        },
+      },
+      animation: {
+        'free-flow': 'carousel 10s linear infinite',
+      },
+      screens: {
+        xs: '550px',
+      },
     },
   },
   plugins: [],

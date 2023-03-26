@@ -7,6 +7,7 @@ import {
   Last,
   Ninth,
   Second,
+  Seventh,
   Sixth,
   Third,
 } from './component'
@@ -21,6 +22,7 @@ const App = (): ReactElement => {
         <Fourth />
         <Fifth />
         <Sixth />
+        <Seventh />
         <Eight />
         <Ninth />
       </main>

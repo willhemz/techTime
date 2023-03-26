@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 import Button from './Button'
-import { data } from './data'
+import { data, faq } from './data'
 
 const Ninth = (): ReactElement => {
   const first: ReactElement = (
@@ -24,10 +24,15 @@ const Ninth = (): ReactElement => {
     </section>
   )
 
+  const third: ReactElement = (
+    <img className='absolute top-[-31px] right-0' src={faq} alt='' />
+  )
+
   const content: ReactElement = (
     <article className='ninth'>
       {first}
       {second}
+      {third}
     </article>
   )
 

@@ -8,7 +8,14 @@ const Third = (): ReactElement => {
     <article className='third'>
       <div className='third__content'>
         {Object.values(logo).map((item, index) => {
-          return <img src={item} key={index} alt='' />
+          return (
+            <img
+              className='w-[38.59px] h-[8.75px] md:scale-150 lg:scale-100 lg:w-[130px] lg:h-[30px]'
+              src={item}
+              key={index}
+              alt=''
+            />
+          )
         })}
       </div>
     </article>
