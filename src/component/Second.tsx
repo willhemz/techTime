@@ -5,7 +5,7 @@ const Second = (): ReactElement => {
   const { people, hero, arrow, wire, greeny, yello, arrInvert }: ImageType =
     images
   const content: ReactElement = (
-    <article className='second'>
+    <article id='home' className='second'>
       <div className='second__content'>
         <header className='second__content__header'>
           <section className='flex flex-col items-center justify-center gap-[17.87px] lg:items-start lg:gap-8 w-full'>

@@ -18,11 +18,18 @@ module.exports = {
       },
       keyframes: {
         carousel: {
-          '100%': { transform: 'translateX(-301.5px)' },
+          '0%': { transform: 'translateX(100%)' },
+        },
+        reshape: {
+          '50%': {
+            transform: 'scale(1.1)',
+            opacity: '.8',
+          },
         },
       },
       animation: {
         'free-flow': 'carousel 10s linear infinite',
+        resize: 'reshape 2s linear infinite',
       },
       screens: {
         xs: '550px',

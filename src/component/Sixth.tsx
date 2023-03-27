@@ -123,7 +123,7 @@ const Sixth = (): ReactElement => {
   )
 
   const fourth: ReactElement = (
-    <button className='btn btn__blue md:btn__blue--large'>
+    <button className='btn btn__blue w-auto md:w-auto md:btn__blue--large'>
       <span className='hidden md:block'>Explore All courses</span>
       <span className='md:hidden'>view courses</span>
     </button>
@@ -138,7 +138,7 @@ const Sixth = (): ReactElement => {
   )
 
   const content: ReactElement = (
-    <article className='sixth'>
+    <article id='courses' className='sixth'>
       <div className='sixth__content'>
         {first}
         {second}

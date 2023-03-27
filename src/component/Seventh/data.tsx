@@ -1,5 +1,10 @@
+export type Func = (val: string) => void
+
 export interface PropsType {
-  [index: string]: string
+  img: string
+  name: string
+  position: string
+  content: string
 }
 
 const bella = new URL('../../assets/images/bella.png', import.meta.url).href

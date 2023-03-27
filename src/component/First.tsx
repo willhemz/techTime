@@ -6,6 +6,7 @@ const First = (): ReactElement => {
   const [viewLinks, setViewLinks] = useState<boolean>(false)
   const containerRef = useRef<HTMLDivElement>(null!)
   const elementRef = useRef<HTMLUListElement>(null!)
+  const [linkValue, setLinkValue] = useState<string>('Home')
 
   useEffect((): void => {
     const conHeight: number = elementRef.current.getBoundingClientRect().height
@@ -30,7 +31,10 @@ const First = (): ReactElement => {
             {data.map((item) => {
               return (
                 <li
-                  className='header__content__links--url p-3 md:p-0 lg:0'
+                  onClick={() => setLinkValue(item.name)}
+                  className={`header__content__links--url p-3 md:p-0 lg:0 ${
+                    linkValue === item.name ? 'text-white' : 'text-bluT'
+                  }`}
                   key={item.id}>
                   <a href={item.link}>{item.name}</a>
                 </li>
@@ -42,7 +46,9 @@ const First = (): ReactElement => {
           </button>
         </div>
         <button
-          className='md:hidden header__btnList'
+          className={`md:hidden header__btnList transition-all ease-linear duration-300 ${
+            viewLinks && ' rotate-[-90deg]'
+          }`}
           onClick={(): void => setViewLinks(!viewLinks)}>
           <GiHamburgerMenu />
         </button>

@@ -1,10 +1,17 @@
 import { ReactElement } from 'react'
 import { PropsType } from './data'
 
+type Data = {
+  id: string
+  value: string
+  location: number
+  setValue: React.Dispatch<React.SetStateAction<string>>
+}
+
 const Comment = ({ img, name, position, content }: PropsType): ReactElement => {
   return (
     <div
-      className={`w-[332px] xl:w-[603px] h-full bg-white rounded-2xl xl:rounded-3xl flex flex-col items-start py-6 px-4 gap-[10px]`}>
+      className={`w-[332px] xl:w-[603px] h-full bg-white rounded-2xl xl:rounded-3xl flex flex-col items-start py-6 px-4 gap-[10px] shrink-0 transition-all duration-1000`}>
       <div className='flex flex-col items-start gap-4 xl:gap-5'>
         <header className='font-satoshi font-[500] text-[10px] leading-[14px] xl:text-sm xl:leading-[26px] capitalize text-[#a2a2a2]'>
           {content}
@@ -16,7 +23,7 @@ const Comment = ({ img, name, position, content }: PropsType): ReactElement => {
               {name}
             </h5>
             <p className='font-satoshi text-[8px] leading-[11px] xl:text-xs xl:leading-4 capitalize text-[#a1a1a1]'>
-              {position}
+              {position as string}
             </p>
           </div>
         </footer>

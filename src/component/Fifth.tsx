@@ -73,7 +73,7 @@ const Fifth = (): ReactElement => {
   )
 
   const content: ReactElement = (
-    <article className='fifth'>
+    <article id='about-us' className='fifth'>
       <div className='fifth__content'>
         {first}
         {second}

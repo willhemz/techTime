@@ -35,7 +35,7 @@ const Eight = (): ReactElement => {
   )
 
   const content: ReactElement = (
-    <article className='eight'>
+    <article id='community' className='eight'>
       {first}
       {third}
       {fourth}
