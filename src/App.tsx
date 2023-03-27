@@ -5,7 +5,9 @@ import {
   First,
   Fourth,
   Last,
+  MbScrollToTopBtn,
   Ninth,
+  ScrollToTop,
   Second,
   Seventh,
   Sixth,
@@ -15,18 +17,21 @@ import {
 const App = (): ReactElement => {
   const content: ReactElement = (
     <div className='app'>
-      <First />
-      <main className='w-full'>
-        <Second />
-        <Third />
-        <Fourth />
-        <Fifth />
-        <Sixth />
-        <Seventh />
-        <Eight />
-        <Ninth />
-      </main>
-      <Last />
+      <ScrollToTop>
+        <First />
+        <main className='w-full'>
+          <Second />
+          <Third />
+          <Fourth />
+          <Fifth />
+          <Sixth />
+          <Seventh />
+          <Eight />
+          <Ninth />
+        </main>
+        <Last />
+        <MbScrollToTopBtn />
+      </ScrollToTop>
     </div>
   )
   return content

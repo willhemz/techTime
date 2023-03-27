@@ -31,7 +31,10 @@ const First = (): ReactElement => {
             {data.map((item) => {
               return (
                 <li
-                  onClick={() => setLinkValue(item.name)}
+                  onClick={() => {
+                    setLinkValue(item.name)
+                    setViewLinks(false)
+                  }}
                   className={`header__content__links--url p-3 md:p-0 lg:0 ${
                     linkValue === item.name ? 'text-white' : 'text-bluT'
                   }`}
