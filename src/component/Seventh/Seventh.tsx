@@ -67,7 +67,7 @@ const Seventh = (): ReactElement => {
       <aside className='absolute top-0 left-0 w-full h-full flex items-center'>
         <div className='w-full flex justify-between mx-3'>
           <button
-            onClick={() => {
+            onClick={(): void => {
               if (containerRef.current.getBoundingClientRect().left < 0)
                 handlePos('reverse')
             }}
