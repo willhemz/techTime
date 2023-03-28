@@ -10,7 +10,7 @@ RUN yarn install
 COPY . .
 
 # Expose Port
-EXPOSE 5173
+EXPOSE 8000
 
 
 CMD ["yarn", "dev"]
