@@ -7,6 +7,6 @@ services:
     build:
       context: .
     ports:
-      - '5173:5173'
+      - '8000:8000'
     stdin_open: true
     tty: true
