@@ -76,7 +76,7 @@ Before installation, please make sure you have already installed the following t
    docker-compose up
    ```
 
-7. proceed to your browser, copy and paste this link in your browser - `http://localhost:8000` or click (here)[http://localhost:8000]:
+7. proceed to your browser, copy and paste this link in your browser - `http://localhost:8000` or click [here](http://localhost:8000):
 
 8. to stop localhost server and abort container running process:
    ```powershell
