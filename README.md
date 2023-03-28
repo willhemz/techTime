@@ -53,44 +53,29 @@ Before installation, please make sure you have already installed the following t
 
 ## <p id="installation">Installation</p>
 
-1. Clone the project, you can use the following command:
+1. Open your bash terminal on VS-code
+2. Navigate to the directory in which you want to store repo.
+
+3. Clone the project, you can use the following command:
 
    ```bash
    git clone https://github.com/willhemz/techTime.git
    ```
 
-2. Navigate to the project directory
+4. Open your Powershell terminal in VS-code
 
-   ```bash
+5. Navigate to the project directory
+
+   ```powershell
    cd techtime
    ```
 
-3. start application. Make sure to be in the techtime folder
+6. start application. Make sure to be in the techtime folder
 
    ```powershell
    docker-compose up
    ```
 
-4. proceed to your browser and visit the link: `localhost:5173`
+7. proceed to your browser and visit the link: `localhost:5173`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-## <p id="server">To start up server</p>
-
-1. In your terminal, navigate to root directory:
-
-   ```bash
-   cd ..
-   ```
-
-2. Run `npm install`
-
-   ```bash
-       npm install
-   ```
-
-3. Start the development server
-
-   ```bash
-       npm run dev
-   ```
