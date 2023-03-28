@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: techtime_c
+    image: techtime
+    build:
+      context: .
+    ports:
+      - '5173:5173'
+    stdin_open: true
+    tty: true
