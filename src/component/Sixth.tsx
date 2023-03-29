@@ -45,7 +45,7 @@ const Sixth = (): ReactElement => {
     </nav>
   )
   const third: ReactElement = (
-    <footer className='flex flex-wrap gap-x-[1.61%] gap-y-2 lg:gap-y-6 items-center justify-center w-full '>
+    <footer className='flex flex-wrap gap-x-[1.61%] gap-y-2 lg:gap-y-6 items-center justify-center xxs:justify-start w-full '>
       {data.map((item, index) => {
         return (
           <article
