@@ -29,7 +29,7 @@ const Sixth = (): ReactElement => {
     </header>
   )
   const second: ReactElement = (
-    <nav className='flex justify-between w-[78.59%] xs:w-[55%] 2xl:w-[55%] items-start lg:items-end gap-4 lg:w-[60%] xl:gap-[12.05%]'>
+    <nav className='flex justify-between w-[78.59%] xs:w-[55%] 2xl:w-[55%] items-start lg:items-end gap-4 lg:w-[62%] xl:gap-[12.05%]'>
       {categories.map((item: string, index: number): ReactElement => {
         return (
           <button

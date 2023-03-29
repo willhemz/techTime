@@ -68,7 +68,7 @@ const Fourth = (): ReactElement => {
         alt=''
       />
       <div className='bg-white rounded-[3.51px] lg:rounded-lg w-[90px] h-[36px] lg:w-[13.86%] lg:h-auto absolute left-[10.75%] lg:left-[49%] top-[408.34px] lg:top-[45%] flex justify-center items-center z-20 sm:left-[40%] sm:translate-x-[-50%] md:translate-x-0 md:top-[40%] md:translate-y-[-50%] md:left-[55%]'>
-        <div className='w-[84.67%] lg:w-[85%] h-[25.75px] lg:h-auto py-2 flex flex-col items-center gap-[1.75px] lg:gap-1'>
+        <div className='w-[84.67%] lg:w-[85%] h-auto py-2  flex flex-col items-center gap-[1.75px] lg:gap-1'>
           <p className='font-satoshi font-bold text-[6px] leading-2 lg:text-[10px] xl:text-xs text-center capitalize text-[#000f24]'>
             255K+ Enrolled Students
           </p>
